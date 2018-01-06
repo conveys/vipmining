@@ -125,7 +125,9 @@ $spacers: (
   3: $spacer,
   4: ($spacer * 1.5),
   5: ($spacer * 3),
-  6: ($spacer * 3.5)
+  6: ($spacer * 3.5),
+  7: ($spacer * 4),
+  8: ($spacer * 4.5)
 ) !default;
 
 // // This variable affects the `.h-*` and `.w-*` classes.
@@ -779,15 +781,15 @@ $navbar-dark-toggler-border-color:  rgba($white, 0) !default;
 
 // // List group
 
-// $list-group-bg:                     $white !default;
-// $list-group-border-color:           rgba($black, .125) !default;
-// $list-group-border-width:           $border-width !default;
+$list-group-bg:                     $dark !default;
+$list-group-border-color:           darken($dark, 3) !default;
+$list-group-border-width:           1px !default;
 // $list-group-border-radius:          $border-radius !default;
 
 // $list-group-item-padding-y:         .75rem !default;
 // $list-group-item-padding-x:         1.25rem !default;
 
-// $list-group-hover-bg:               $gray-100 !default;
+$list-group-hover-bg:               darken($list-group-bg, 1) !default;
 // $list-group-active-color:           $component-active-color !default;
 // $list-group-active-bg:              $component-active-bg !default;
 // $list-group-active-border-color:    $list-group-active-bg !default;
@@ -900,6 +902,25 @@ body {
 //
 // headlines
 //
+
+.bg-diamond {
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 100px;
+    width: 100px;
+    border: 2px solid $primary;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 1;
+  } //diamond shape
+
+} //.bg-diamond
+
 .headline-diamond {
   position: relative;
   padding-bottom: 2.5rem;
@@ -1120,6 +1141,27 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
   &.btn-sm { font-size: .75rem; } //update up
 
 }
+
+//
+// list groups
+//
+.list-group-svs {
+
+  .list-group-item, h2.h4 {
+    transition: all 250ms ease-in;
+  }
+
+  .list-group-item {
+
+    &:hover {
+      
+      h2.h4 { color: $primary!important; }
+
+    } //hover
+
+  } //.list-group-item
+
+} //.list-group-svs
 
 
 
