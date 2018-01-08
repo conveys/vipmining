@@ -1,5 +1,7 @@
 console.log('\'Allo \'Allo!');
 
+AOS.init();
+
 
 $('.fade-in').each(function() {
 	var src = $(this).data('src');
