@@ -987,12 +987,6 @@ body {
 // dividers
 hr { border-width: 1px; }
 
-
-.section {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-} //.section
-
 .section-title {
   position: relative;
   padding-bottom: 1.25rem;
@@ -1010,6 +1004,57 @@ hr { border-width: 1px; }
   } //border 
 
 } //.section-title
+
+
+
+//
+// sections
+//
+.section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+
+  .section-title, 
+  .section-subtitle {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    letter-spacing: 2px;
+  } //.section-title
+
+  .section-subtitle { font-size: $font-size-base; } //.section-subtitle
+
+  //classes adjustments
+  &.bg-primary {
+    
+    .section-title, 
+    .section-subtitle { color: $dark; } //.section-title
+
+    .section-title {
+      
+      &:after { background-color: $dark; } 
+
+    } //.section-title
+
+  } //.bg-primary
+
+  &.bg-dark {
+
+    .section-title, 
+    .section-subtitle { font-weight: 500; } //.section-title
+    
+    .section-title { color: $primary; } //.section-title
+    .section-subtitle { color: $white; } //.section-subtitle
+
+    .section-title {
+
+      &:after { background-color: $primary; }
+
+    } //.section-title
+
+  } //.bg-primary
+
+} //.section
+
 
 
 
