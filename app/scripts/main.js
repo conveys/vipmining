@@ -1,49 +1,47 @@
-console.log('\'Allo \'Allo! here');
+console.log('\'Allo \'Allo!');
 
 AOS.init();
 
-	
+$(function() {
 
-	$('a[href^="#"]').on('click', function(event) {
+  var navbar = $('#navbar');
 
-		var target = $(this.getAttribute('href'));
-		if( target.length ) {
-			event.preventDefault();
-			$('html, body').stop().animate({
-				scrollTop: target.offset().top - 61 //value needs to be dinamic
-			}, 500, 'swing');
-		}
-		
-	});
+  $('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top - 61 //value needs to be dinamic
+      }, 500, 'swing');
+    }
+
+  });
+
+  navbar.on('click', function() {
+    navbar.collapse('hide');
+    console.log(navbar);
+  });
+
+  $('.fade-in').each(function() {
+    var src = $(this).data('src');
+    if (src) {
+      var img = new Image();
+      img.style.display = 'none';
+      img.onload = function() {
+        $(this).fadeIn(250).addClass('img-cover-bg');
+      };
+      $(this).append(img);
+      img.src = src;
+    }
+  });
+
+});
 
 
-	$(function() {
-		
-		var navbar = $('#navbar');
-		
-		
-		navbar.on('click', function() {
-			navbar.collapse('hide');
-			console.log(navbar);
-		});
-
-	});
-
-	
 
 
-	$('.fade-in').each(function() {
-		var src = $(this).data('src');
-		if (src) {
-			var img = new Image();
-			img.style.display = 'none';
-			img.onload = function() {
-				$(this).fadeIn(250).addClass('img-cover-bg');
-			};
-			$(this).append(img);
-			img.src = src;
-		}
-	});
+
 
 
 

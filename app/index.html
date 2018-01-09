@@ -170,7 +170,7 @@
 
         <div class="col-md-6">
 
-          <div class="card card-grid bg-dark text-white h-100">
+          <div class="card card-grid bg-dark text-white h-1000">
 
             <img class="card-img-top" src="images/nowmining-bitcoin-thumb.jpg" alt="">
 
@@ -184,7 +184,7 @@
 
                 <h4 class="card-title h5 text-uppercase font-weight-bold mt-4 mt-md-5" style="letter-spacing: 1px;">What is Bitcoin?</h4>
 
-                <button class="card-link btn btn-link btn-block pb-0" type="button" data-toggle="collapse" data-target="#contentId" aria-expanded="false" aria-controls="contentId">
+                <button class="card-link btn btn-link btn-block pb-0" type="button" data-toggle="collapse" data-target="#bitcoin" aria-expanded="false" aria-controls="bitcoin">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" width="32" height="32"><g class="nc-icon-wrapper" fill="#ffffff"><g class="nc-interact_open-close-o-32" transform="rotate(0.00 16 16)"> <line x1="16" y1="2" x2="16" y2="30" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> <line x1="30" y1="16" x2="2" y2="16" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> </g> <script>!function(){function t(i){var e=i.parentNode;if("svg"!==e.tagName)e=t(e);return e;}function i(t,i,e,n,a){if (a == undefined) a = 1.70158;return e*((t=t/n-1)*t*((a+1)*t+a)+1)+i;}function e(t){this.element=t,this.container=this.element.querySelectorAll(".nc-interact_open-close-o-32")[0],this.time={start:null,total:250},this.status={interacted:!1,animating:!1},this.init()}if(!window.requestAnimationFrame){var n=null;window.requestAnimationFrame=function(t,i){var e=(new Date).getTime();n||(n=e);var a=Math.max(0,16-(e-n)),r=window.setTimeout(function(){t(e+a)},a);return n=e+a,r}}e.prototype.init=function(){var t=this;this.element.addEventListener("click",function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},e.prototype.triggerAnimation=function(t){var i=this.getProgress(t);this.animateIcon(i),this.checkProgress(i)},e.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},e.prototype.checkProgress=function(t){var i=this;this.time.total>t?window.requestAnimationFrame(i.triggerAnimation.bind(i)):(this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null)},e.prototype.animateIcon=function(t){if(t>this.time.total)(t=this.time.total);if(0>t)(t=0);var e=this.status.interacted?i(t,-45,45,this.time.total).toFixed(2):i(t,0,-45,this.time.total).toFixed(2);this.container.setAttribute("transform","rotate("+e+" 16 16)")};var a=document.getElementsByClassName("nc-interact_open-close-o-32");if(a)for(var r=0;a.length>r;r++)new e(t(a[r]))}();</script></g></svg>
                 </button>
 
@@ -194,17 +194,29 @@
             </div>
             <!-- /.card-img-overlay -->
 
-            <!-- <div class="collapse fade" id="contentId">
-              <p class="text-white">
-                Bitcoin was the first cryptocurrency created; Satoshi Nakamoto created it in 2009. It serves to exchange goods and services like the Euro or the American Dollar, but with the advantage of being an unregulated electronic currency, possessing novel features such as safety, efficiency, and transaction easiness. Through Bitcoin, users can make transactions directly to the recipient, without intermediaries, since they are verified by an accounting system called blockchain
-              </p>
-            </div> -->
-
           </div>
           <!-- /.card -->
 
+          <div class="container collapse fade" id="bitcoin">
+            <div class="row">
+
+              <div class="col-md-12 p-6">
+
+                <p class="text-white text-left mb-0">
+                  Bitcoin was the first cryptocurrency created; Satoshi Nakamoto created it in 2009. It serves to exchange goods and services like the Euro or the American Dollar, but with the advantage of being an unregulated electronic currency, possessing novel features such as safety, efficiency, and transaction easiness. Through Bitcoin, users can make transactions directly to the recipient, without intermediaries, since they are verified by an accounting system called blockchain
+                </p>
+
+              </div>
+              <!-- /.col-md-12 -->
+
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+
         </div>
         <!-- /.col-md-6 -->
+
 
         <div class="col-md-6">
 
@@ -222,20 +234,35 @@
 
                 <h4 class="card-title h5 text-uppercase font-weight-bold mt-4 mt-md-5" style="letter-spacing: 1px;">What is Blockchain?</h4>
 
-                <button class="card-link btn btn-link text-dark btn-block pb-0" type="button" data-toggle="collapse" data-target="#contentId" aria-expanded="false" aria-controls="contentId">
+                <button class="card-link btn btn-link text-dark btn-block pb-0" type="button" data-toggle="collapse" data-target="#blockchain" aria-expanded="false" aria-controls="blockchain">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" width="32" height="32"><g class="nc-icon-wrapper" fill="#444444"><g class="nc-interact_open-close-o-32" transform="rotate(0.00 16 16)"> <line x1="16" y1="2" x2="16" y2="30" fill="none" stroke="#444444" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> <line x1="30" y1="16" x2="2" y2="16" fill="none" stroke="#444444" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> </g> <script>!function(){function t(i){var e=i.parentNode;if("svg"!==e.tagName)e=t(e);return e;}function i(t,i,e,n,a){if (a == undefined) a = 1.70158;return e*((t=t/n-1)*t*((a+1)*t+a)+1)+i;}function e(t){this.element=t,this.container=this.element.querySelectorAll(".nc-interact_open-close-o-32")[0],this.time={start:null,total:250},this.status={interacted:!1,animating:!1},this.init()}if(!window.requestAnimationFrame){var n=null;window.requestAnimationFrame=function(t,i){var e=(new Date).getTime();n||(n=e);var a=Math.max(0,16-(e-n)),r=window.setTimeout(function(){t(e+a)},a);return n=e+a,r}}e.prototype.init=function(){var t=this;this.element.addEventListener("click",function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},e.prototype.triggerAnimation=function(t){var i=this.getProgress(t);this.animateIcon(i),this.checkProgress(i)},e.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},e.prototype.checkProgress=function(t){var i=this;this.time.total>t?window.requestAnimationFrame(i.triggerAnimation.bind(i)):(this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null)},e.prototype.animateIcon=function(t){if(t>this.time.total)(t=this.time.total);if(0>t)(t=0);var e=this.status.interacted?i(t,-45,45,this.time.total).toFixed(2):i(t,0,-45,this.time.total).toFixed(2);this.container.setAttribute("transform","rotate("+e+" 16 16)")};var a=document.getElementsByClassName("nc-interact_open-close-o-32");if(a)for(var r=0;a.length>r;r++)new e(t(a[r]))}();</script></g></svg>
                 </button>
 
               </div>
               <!-- /.align-self-center -->
 
-              <!-- <p class="card-text font-weight-bold">Also known as the Accounting Book, blockchain is a database distributed in blocks, where each block has a verifiable registry of all transactions that were made in its history; the information contained is permanent and unchangeable, thus this systems is considered as the most secure system ever created</p> -->
-
             </div>
             <!-- /.card-img-overlay -->
 
           </div>
           <!-- /.card -->
+
+          <div class="container collapse fade" id="blockchain">
+            <div class="row">
+
+              <div class="col-md-12 p-6">
+
+                <p class="text-white text-left mb-0">
+                  Also known as the Accounting Book, blockchain is a database distributed in blocks, where each block has a verifiable registry of all transactions that were made in its history; the information contained is permanent and unchangeable, thus this systems is considered as the most secure system ever created
+                </p>
+
+              </div>
+              <!-- /.col-md-12 -->
+
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
 
         </div>
         <!-- /.col-md-6 -->
@@ -256,14 +283,12 @@
 
                 <h4 class="card-title h5 text-uppercase font-weight-bold mt-4 mt-md-5" style="letter-spacing: 1px;">What is Cryptocurrency mining?</h4>
 
-                <button class="card-link btn btn-link btn-block pb-0" type="button" data-toggle="collapse" data-target="#contentId" aria-expanded="false" aria-controls="contentId">
+                <button class="card-link btn btn-link btn-block pb-0" type="button" data-toggle="collapse" data-target="#cryptocurrency" aria-expanded="false" aria-controls="cryptocurrency">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" width="32" height="32"><g class="nc-icon-wrapper" fill="#ffffff"><g class="nc-interact_open-close-o-32" transform="rotate(0.00 16 16)"> <line x1="16" y1="2" x2="16" y2="30" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> <line x1="30" y1="16" x2="2" y2="16" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> </g> <script>!function(){function t(i){var e=i.parentNode;if("svg"!==e.tagName)e=t(e);return e;}function i(t,i,e,n,a){if (a == undefined) a = 1.70158;return e*((t=t/n-1)*t*((a+1)*t+a)+1)+i;}function e(t){this.element=t,this.container=this.element.querySelectorAll(".nc-interact_open-close-o-32")[0],this.time={start:null,total:250},this.status={interacted:!1,animating:!1},this.init()}if(!window.requestAnimationFrame){var n=null;window.requestAnimationFrame=function(t,i){var e=(new Date).getTime();n||(n=e);var a=Math.max(0,16-(e-n)),r=window.setTimeout(function(){t(e+a)},a);return n=e+a,r}}e.prototype.init=function(){var t=this;this.element.addEventListener("click",function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},e.prototype.triggerAnimation=function(t){var i=this.getProgress(t);this.animateIcon(i),this.checkProgress(i)},e.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},e.prototype.checkProgress=function(t){var i=this;this.time.total>t?window.requestAnimationFrame(i.triggerAnimation.bind(i)):(this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null)},e.prototype.animateIcon=function(t){if(t>this.time.total)(t=this.time.total);if(0>t)(t=0);var e=this.status.interacted?i(t,-45,45,this.time.total).toFixed(2):i(t,0,-45,this.time.total).toFixed(2);this.container.setAttribute("transform","rotate("+e+" 16 16)")};var a=document.getElementsByClassName("nc-interact_open-close-o-32");if(a)for(var r=0;a.length>r;r++)new e(t(a[r]))}();</script></g></svg>
                 </button>
 
               </div>
               <!-- /.align-self-center -->
-
-              <!-- <p class="card-text">Cryptocurrency mining is the resolution of mathematical problems through specialized equipment and software to efficiently issue a certain number of bitcoins in return. Cryptocurrencies such as Bitcoin are generated using algorithms to manage and verify transactions</p> -->
 
             </div>
             <!-- /.card-img-overlay -->
@@ -271,8 +296,26 @@
           </div>
           <!-- /.card -->
 
+          <div class="container collapse fade" id="cryptocurrency">
+            <div class="row">
+
+              <div class="col-md-12 p-6">
+
+                <p class="text-white text-left mb-0">
+                  Cryptocurrency mining is the resolution of mathematical problems through specialized equipment and software to efficiently issue a certain number of bitcoins in return. Cryptocurrencies such as Bitcoin are generated using algorithms to manage and verify transactions
+                </p>
+
+              </div>
+              <!-- /.col-md-12 -->
+
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+
         </div>
         <!-- /.col-md-6 -->
+
 
         <div class="col-md-6 order-md-3">
             
@@ -290,20 +333,35 @@
 
                 <h4 class="card-title h5 text-uppercase font-weight-bold mt-4 mt-md-5" style="letter-spacing: 1px;">What is Cloudmining?</h4>
 
-                <button class="card-link btn btn-link text-dark btn-block pb-0" type="button" data-toggle="collapse" data-target="#contentId" aria-expanded="false" aria-controls="contentId">
+                <button class="card-link btn btn-link text-dark btn-block pb-0" type="button" data-toggle="collapse" data-target="#cloudmining" aria-expanded="false" aria-controls="cloudmining">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" width="32" height="32"><g class="nc-icon-wrapper" fill="#444444"><g class="nc-interact_open-close-o-32" transform="rotate(0.00 16 16)"> <line x1="16" y1="2" x2="16" y2="30" fill="none" stroke="#444444" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> <line x1="30" y1="16" x2="2" y2="16" fill="none" stroke="#444444" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></line> </g> <script>!function(){function t(i){var e=i.parentNode;if("svg"!==e.tagName)e=t(e);return e;}function i(t,i,e,n,a){if (a == undefined) a = 1.70158;return e*((t=t/n-1)*t*((a+1)*t+a)+1)+i;}function e(t){this.element=t,this.container=this.element.querySelectorAll(".nc-interact_open-close-o-32")[0],this.time={start:null,total:250},this.status={interacted:!1,animating:!1},this.init()}if(!window.requestAnimationFrame){var n=null;window.requestAnimationFrame=function(t,i){var e=(new Date).getTime();n||(n=e);var a=Math.max(0,16-(e-n)),r=window.setTimeout(function(){t(e+a)},a);return n=e+a,r}}e.prototype.init=function(){var t=this;this.element.addEventListener("click",function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},e.prototype.triggerAnimation=function(t){var i=this.getProgress(t);this.animateIcon(i),this.checkProgress(i)},e.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},e.prototype.checkProgress=function(t){var i=this;this.time.total>t?window.requestAnimationFrame(i.triggerAnimation.bind(i)):(this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null)},e.prototype.animateIcon=function(t){if(t>this.time.total)(t=this.time.total);if(0>t)(t=0);var e=this.status.interacted?i(t,-45,45,this.time.total).toFixed(2):i(t,0,-45,this.time.total).toFixed(2);this.container.setAttribute("transform","rotate("+e+" 16 16)")};var a=document.getElementsByClassName("nc-interact_open-close-o-32");if(a)for(var r=0;a.length>r;r++)new e(t(a[r]))}();</script></g></svg>
                 </button>
 
               </div>
               <!-- /.align-self-center -->
 
-              <!-- <p class="card-text font-weight-bold">Cloudmining or hashing permits users to acquire hardware mining capacities in specialized centers for pre-established periods of time, with the objective of acquiring cryptocurrencies and without involving associated maintenance costs</p> -->
-
             </div>
             <!-- /.card-img-overlay -->
 
           </div>
           <!-- /.card -->
+
+          <div class="container collapse fade" id="cloudmining">
+            <div class="row">
+
+              <div class="col-md-12 p-6">
+
+                <p class="text-white text-left mb-0">
+                  Cloudmining or hashing permits users to acquire hardware mining capacities in specialized centers for pre-established periods of time, with the objective of acquiring cryptocurrencies and without involving associated maintenance costs
+                </p>
+
+              </div>
+              <!-- /.col-md-12 -->
+
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
 
         </div>
         <!-- /.col-md-6 -->
