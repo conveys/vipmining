@@ -1053,6 +1053,19 @@ hr { border-width: 1px; }
 
   } //.bg-primary
 
+  &.section-img {
+    position: relative;
+    overflow: hidden;
+
+    &.bg-dark {
+      
+      &.border { border-width: 1px !important; }
+      &.border-dark { border-color: darken($color: $dark, $amount: 5) !important; }
+
+    } //&.bg-dark
+
+  } //section-image
+
 } //.section
 
 
@@ -1106,7 +1119,7 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
 .cover {
   height: 100%;
   widows: 100%;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
 
   .cover-headline {
@@ -1122,6 +1135,15 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
     text-transform: uppercase;
     letter-spacing: 2px;
   } //.lead
+
+  .btn {
+    &.position-absolute {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    } //&.position-absolute
+  } //.btn
 
   @include media-breakpoint-up(md) {
     
