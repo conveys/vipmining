@@ -1211,7 +1211,12 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
 //
 .card {
 
-  &.card-grid {  border: none; } //.card-grid
+  &.card-grid {
+    border: none; 
+
+    //@include media-breakpoint-up(md) {} //.card-grid
+
+  } //.card-grid
 
   &.bg-dark {
     .card-img-overlay { background-color: $bg-dark-opaque; }
@@ -1242,6 +1247,17 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
   } //.card-pk
 
 } //.card
+
+@include media-breakpoint-up(md) {
+
+  .card-collapse {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: $dark;
+    z-index: 1;
+  } //.card-collapse
+ 
+} //media queries > tablet 
 
 
 
