@@ -1163,10 +1163,22 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
   object-fit: cover;
 
   .img-cover-bg {
-    width: 100vw; 
-    height: 100vh; 
-    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    //object-fit: cover;
   } //.img-cover-bg
+
+  &.img-cover-h100 {
+    height: inherit;
+
+    .img-cover-bg {
+      max-height: 100%;
+      height: 100%;
+      filter: blur(10px);
+      opacity: .125;
+    } //.img-cover-bg
+
+  } //.img-cover-h100
 
 } //.img-cover
 
