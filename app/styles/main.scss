@@ -1094,6 +1094,8 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
   letter-spacing: 1px;
 } //.navbar-brand
 
+.navbar-collapse { transition: all 300ms ease; } //.navbar-collapse
+
 .navbar-toggler { padding-right: 0; }
 
 

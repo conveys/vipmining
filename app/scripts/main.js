@@ -2,6 +2,7 @@ console.log('\'Allo \'Allo! here');
 
 AOS.init();
 
+	
 
 	$('a[href^="#"]').on('click', function(event) {
 
@@ -14,6 +15,21 @@ AOS.init();
 		}
 		
 	});
+
+
+	$(function() {
+		
+		var navbar = $('#navbar');
+		
+		
+		navbar.on('click', function() {
+			navbar.collapse('hide');
+			console.log(navbar);
+		});
+
+	});
+
+	
 
 
 	$('.fade-in').each(function() {
