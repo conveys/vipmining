@@ -1219,12 +1219,7 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
 //
 .card {
 
-  &.card-grid {
-    border: none; 
-
-    //@include media-breakpoint-up(md) {} //.card-grid
-
-  } //.card-grid
+  &.card-grid { border: none;  } //.card-grid
 
   &.bg-dark {
     .card-img-overlay { background-color: $bg-dark-opaque; }
@@ -1260,8 +1255,9 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
 
   .card-collapse {
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-color: $dark;
+    width: auto; height: auto;
+    top: 10px; right: 10px; bottom: 10px; left: 10px;
+    background-color: rgba($color: $dark, $alpha: .95);
     z-index: 1;
   } //.card-collapse
  
@@ -1336,7 +1332,5 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-
-  
 
 } //.footer
