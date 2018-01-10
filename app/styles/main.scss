@@ -1302,19 +1302,12 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
 
 
 
-
-
-
-
-//
-// footer
-//
+/* ========================================================================== */
+/* FOOTER */
+/* ========================================================================== */
 .footer {
   border-top: 1px solid darken($color: $dark, $amount: 3);
   background-color: darken($color: $dark, $amount: 2);
-}
-
-.footer {
   text-align: center; 
 
   .nav {
