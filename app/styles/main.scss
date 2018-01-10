@@ -1109,7 +1109,17 @@ $bg-primary-opaque: rgba($color: $primary, $alpha: .975);
 
 .navbar-collapse { transition: all 300ms ease; } //.navbar-collapse
 
-.navbar-toggler { padding-right: 0; }
+.navbar-toggler { 
+  outline: 0;
+  padding-right: 0; 
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+}
 
 
 

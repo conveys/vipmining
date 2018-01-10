@@ -2,6 +2,8 @@ console.log('\'Allo \'Allo!');
 
 AOS.init();
 
+//var togglerIcon = $('#togglerIcon');
+
 $(function() {
 
   var navbar = $('#navbar');
@@ -19,8 +21,8 @@ $(function() {
   });
 
   navbar.on('click', function() {
-    navbar.collapse('hide');
-    console.log(navbar);
+		navbar.collapse('hide');
+		//togglerIcon.click();
   });
 
   $('.fade-in').each(function() {
@@ -37,6 +39,14 @@ $(function() {
   });
 
 });
+
+
+
+
+
+
+
+
 
 
 
