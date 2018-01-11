@@ -1,10 +1,14 @@
 AOS.init();
 
 //var togglerIcon = $('#togglerIcon');
+var theDate = new Date().getFullYear();
 
 $(function() {
 
   var navbar = $('#navbar');
+  var copyrightEl = $('#copyright');
+
+  copyrightEl.html(theDate); // get current year
 
   $('a[href^="#"]').on('click', function(event) {
 
